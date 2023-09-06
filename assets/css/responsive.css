@@ -1,0 +1,17 @@
+@media only screen and (max-width: 650px) {
+    #form-container{
+        width: 25rem;
+    }
+  }
+
+@media only screen and (max-width: 550px) {
+
+    #form-container{
+        width: 20rem;
+        padding: 30px 45px;
+    }
+    body{
+        padding: 2rem;
+    }
+    
+  }

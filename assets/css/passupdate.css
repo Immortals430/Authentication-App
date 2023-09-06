@@ -1,0 +1,43 @@
+    h1{
+        text-align: center;
+        color: aliceblue;
+        font-family: sans-serif;
+    }
+    
+    #form-container{
+        background: black;
+        margin: 50px auto; 
+        width: 500px;
+        padding: 50px;
+    }
+
+    #form{
+        display: flex;
+        flex-flow: column;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    label{
+        margin-bottom: 10px;
+    }
+    input{
+        border: none;
+        padding: 5px 0;
+        background: none;
+        margin-bottom: 40px;
+        border-bottom: 2px solid white;
+        outline: none;
+        color: white;
+    }
+
+    input[type="submit"]{
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 50px;
+        width: 150px;
+        align-self: center;
+        background-color: aquamarine;
+        cursor: pointer;
+    }

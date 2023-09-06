@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">   <!-- noty css cdn -->
+    <link rel="stylesheet" href="/css/default.css">
+    <%- style %>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="https://kit.fontawesome.com/9774534ce3.js" crossorigin="anonymous"></script> <!-- fontawesome cdn -->
+    
+    <title>Authentication Page</title>
+</head>
+<body>
+
+    <%- body %>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>   <!-- noty js cdn -->
+
+<% if(flash.success && flash.success.length > 0){ %>   <!-- noty script -->
+    <script>
+    new Noty({
+        theme: 'relax',
+        text: '<%= flash.success %>',
+        type: 'success',
+        layout: 'topRight',
+        timeout: 1500
+        }).show();  
+    </script>
+<% } %>
+
+<% if(flash.error && flash.error.length > 0){ %>
+    <script>
+    new Noty({
+        theme: 'relax',
+        text: '<%= flash.error %>',
+        type: 'error',
+        layout: 'topRight',
+        timeout: 1500
+        }).show();  
+    </script>
+<% } %>
+
+
+<%- script %>  <!-- extractScripts -->
+
+</body>
+</html>

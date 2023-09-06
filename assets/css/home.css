@@ -1,0 +1,90 @@
+*{
+    text-align: center;
+}
+
+
+#header{
+    margin: 50px;
+    color: white;
+}
+
+
+#btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px auto;
+    width: 20rem;
+    
+    
+}
+
+#reset-pass-btn{
+    background: none;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+    color: white;
+}
+
+#sign-out{
+    background: red;
+    padding: 1rem;
+    border-radius: 50px;
+    width: 130px;
+
+}
+
+#sign-out a{
+
+    color: white;
+}
+#reset-pass{
+    background-color: #0062ff;
+    padding: 1rem;
+    border-radius: 50px;
+    width: 130px;
+    
+}
+
+#reset-pass-form-container{
+    background: rgba(0, 0, 0, 0.289);
+    padding: 50px;
+    width: 20rem;
+    margin: auto;
+    color: white;
+}
+
+#reset-pass-form{
+    display: flex;
+    flex-flow: column;
+}
+
+#reset-pass-form input{
+    margin-bottom: 15px;
+    color: white;
+}
+
+#reset-pass-form p{
+    font-size: 0.8rem;
+    color: rgb(197, 197, 197);
+    margin-bottom: 25px;
+}
+
+#email{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: left;
+    outline: none;
+    padding: 2px 0;
+}
+
+#submit-btn{
+    background-color: rgb(78, 78, 78);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.appear-form{
+   display: none;
+}

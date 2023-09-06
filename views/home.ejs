@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+<div id="header">
+    <h1>Welcome</h1>
+    <br>
+    <h3>You are Successfully Logged In</h3>
+</div>
+
+
+<!-- signOut button -->
+<div id="btn-container">
+
+    <div id="sign-out">   
+        <a href="/signOut">Sign Out</a>
+    </div>
+
+    <div id="reset-pass">
+        <input type="button" id="reset-pass-btn" onclick="resetPassForm()" value="Reset">
+    </div>
+
+</div >
+
+<!-- reset password button -->
+<div id="reset-pass-form-container" class="appear-form">
+    <form action="/forgotPassword" method="post" id="reset-pass-form" >
+        <h2>Reset your password</h2>
+        <br>
+        <p>Enter your email and we'll send you reset link</p>
+        <input type="email" name="email" id="email" placeholder="Email Id">
+        <input type="submit" id="submit-btn">
+    </form>
+</div>
+
+<script>
+    function resetPassForm(){
+        document.getElementById('reset-pass-form-container').classList.toggle('appear-form');
+    }
+</script>
+

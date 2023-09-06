@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/form.css">
+      
+      <!-- signIn form -->
+      <div id="form-container">
+        <form action="/signIn" method="post"  id="form">
+            <h1>Have an Account?</h1>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+
+            <input type="submit" class="g-recaptcha" data-sitekey="<%= captchasecret %>" data-callback="onSubmit" value="Sign In">
+
+        </form>
+
+        <div>
+            Don't have an account? <a href="/signUpPage" style="color: rgb(74, 80, 254);">Sign Up</a>
+        </div>  
+        <div>
+            -Or Login With-
+        </div>
+       
+            <a href="/googleSignIn" id="signupbtn">Sign In Google</a>
+      
+      
+      </div>
+      
+
+
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function onSubmit(token) {
+    document.getElementById("form").submit();
+  }
+</script>
+

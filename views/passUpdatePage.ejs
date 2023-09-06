@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/passupdate.css">
+
+<!-- password update form -->
+<h1>Reset your Password</h1>
+<div id="form-container">
+    <form action="/updatePassword" method="post" id="form">
+        <input type="hidden" name="token" id="token" value="<%= token %>">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter somthing complicated">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Same as above">
+        <input type="submit">
+    </form>
+</div>
