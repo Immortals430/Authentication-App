@@ -3,7 +3,7 @@
 
 In this project, users can sign up using local strategy and Google OAuth. Users can also reset passwords using the email verification method.
 
-Link to production site: [Authentication App](http://cnprojects.online/)
+Link to production site: [Authentication App](https://authentication-app-2m6x.onrender.com)
 
 
 ## Features
